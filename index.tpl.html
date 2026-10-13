@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fort Sullivan — 1401 Middle Street</title>
+    <meta name="description" content="Fort Sullivan: an 1891 Gothic chapel and a 2010 Romanesque keep, joined into a castle by the sea. Sullivan's Island, South Carolina.">
+    <script>document.documentElement.classList.add('js')</script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,600&family=Space+Grotesk:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script src="site.js" defer></script>
+</head>
+<body>
+    <a class="skip-link" href="#stratum-1">Skip to content</a>
+
+    <!-- ═══════════════════════════════════════════════════════════════
+         SPINE — the timeline. Each year opens its chapter of the history.
+    ═══════════════════════════════════════════════════════════════ -->
+    <nav class="spine" aria-label="Timeline">
+        <a class="spine-logo" href="index.html" aria-current="page">Fort Sullivan</a>
+        <a href="history.html#chapel" class="spine-link" data-label="1891 · The Chapel"><span>1891</span></a>
+        <div class="spine-divider"></div>
+        <a href="history.html#garrison" class="spine-link" data-label="1907 · The Garrison"><span>1907</span></a>
+        <div class="spine-divider"></div>
+        <a href="history.html#restoration" class="spine-link" data-label="2002 · Restoration"><span>2002</span></a>
+        <div class="spine-divider"></div>
+        <a href="history.html#keep" class="spine-link" data-label="2010 · The Keep"><span>2010</span></a>
+        <div class="spine-divider"></div>
+        <a href="history.html#archive" class="spine-link" data-label="The Archive"><span>Archive</span></a>
+    </nav>
+
+    <!-- ═══════════════════════════════════════════════════════════════
+         STRATUM 0 — THE HORIZON (aerial film over the harbor view)
+    ═══════════════════════════════════════════════════════════════ -->
+    <section class="stratum stratum-horizon in-view" id="stratum-0">
+        <div class="horizon-img" style="background-image:url('view.webp')"></div>
+        <div class="hero-film" aria-hidden="true"></div>
+        <div class="horizon-veil"></div>
+        <div class="horizon-content">
+            <p class="horizon-coord">32°45′N · 79°51′W</p>
+            <h1 class="horizon-title">
+                <span class="horizon-word" style="animation-delay:0s">Fort</span>
+                <span class="horizon-word" style="animation-delay:.4s">Sullivan</span>
+            </h1>
+            <p class="horizon-address">1401 Middle Street &nbsp;·&nbsp; Sullivan's Island, South Carolina</p>
+            <div class="horizon-yr" id="horizon-yr">
+                <span class="yr" data-target="1891">1891</span>
+            </div>
+        </div>
+        <div class="horizon-descend">
+            <span class="descend-label">Descend</span>
+            <span class="descend-arrow">↓</span>
+        </div>
+        <button class="film-toggle" type="button" hidden>Pause film</button>
+    </section>
+
+    <!-- Mobile timeline (the spine, laid flat) -->
+    <nav class="timeline-strip" aria-label="Timeline">
+        <a href="history.html#chapel"><b>1891</b><span>Chapel</span></a>
+        <a href="history.html#garrison"><b>1907</b><span>Garrison</span></a>
+        <a href="history.html#restoration"><b>2002</b><span>Restored</span></a>
+        <a href="history.html#keep"><b>2010</b><span>The Keep</span></a>
+    </nav>
+
+    <main>
+    <!-- ═══════════════════════════════════════════════════════════════
+         STRATUM I — 2010: THE KEEP (newest is topmost stone)
+    ═══════════════════════════════════════════════════════════════ -->
+    <section class="stratum stratum-keep" id="stratum-1">
+        <div class="keep-bg parallax-bg" data-speed="0.3" style="background-image:url('keepx1.webp')"></div>
+        <div class="keep-overlay"></div>
+        <div class="stratum-stamp">
+            <span class="stamp-era">I</span>
+            <span class="stamp-year">2010</span>
+        </div>
+        <div class="keep-text">
+            <p class="stratum-tag">The Keep · The Summer Hall</p>
+            <h2 class="stratum-headline">Designed to look<br><em>older than the church it joined.</em></h2>
+            <p class="stratum-body">Massive cypress timbers. Romanesque arches answering, point-for-arch, the Gothic chapel built one hundred nineteen years before. Porches and rooftop terraces open to the garden, the harbor and the changing coastal light.</p>
+            <a class="chapter-link" href="history.html#keep">Read the chapter · 2010 <span aria-hidden="true">→</span></a>
+        </div>
+        <div class="keep-grid">
+            <figure class="kg-item kg-tall"><img src="keepx16.webp" alt="The keep's roofline and crenellations" loading="lazy"></figure>
+            <figure class="kg-item"><img src="keeproof.webp" alt="Rooftop terrace of the keep" loading="lazy"></figure>
+            <figure class="kg-item"><img src="keepn26.webp" alt="Great hall inside the keep" loading="lazy"></figure>
+            <figure class="kg-item kg-tall"><img src="keepstarsstairwell.webp" alt="Star-painted stairwell" loading="lazy"></figure>
+            <figure class="kg-item"><img src="keepn24.webp" alt="A bedchamber in the keep" loading="lazy"></figure>
+            <figure class="kg-item"><img src="keepgreatroom1.webp" alt="The keep's great room" loading="lazy"></figure>
+        </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════════════════════════════
+         THE JOIN — THE SEAM: INTERACTIVE ERA REVEALER
+    ═══════════════════════════════════════════════════════════════ -->
+    <section class="stratum stratum-join" id="stratum-join">
+        <div class="join-revealer" id="join-revealer" tabindex="0" role="slider" aria-label="Compare the 1891 granite and the 2010 keep" aria-valuemin="0" aria-valuemax="100" aria-valuenow="50">
+            <div class="join-after" style="background-image:url('keepcastlejoin2.webp')">
+                <span class="join-label join-label-right">2010 · Reinforced Concrete</span>
+            </div>
+            <div class="join-before" id="join-before" style="background-image:url('keepcastlejoin2.webp')">
+                <span class="join-label join-label-left">1891 · Rubble Granite</span>
+            </div>
+            <div class="join-handle" id="join-handle">
+                <div class="join-handle-bar"></div>
+                <div class="join-handle-knob"><span>↔</span></div>
+            </div>
+        </div>
+        <div class="join-caption">
+            <blockquote class="join-quote">The seam where Gothic meets Romanesque — 130 years of architecture in a single frame.</blockquote>
+            <p class="join-subcap">Drag the divider · Where the chapel meets the keep</p>
+        </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════════════════════════════
+         STRATUM II — THE GARRISON YEARS
+    ═══════════════════════════════════════════════════════════════ -->
+    <section class="stratum stratum-military" id="stratum-2">
+        <div class="military-rule"></div>
+        <div class="stratum-stamp stratum-stamp-right">
+            <span class="stamp-era">II</span>
+            <span class="stamp-year">1907</span>
+        </div>
+        <div class="military-content container">
+            <div class="military-text">
+                <p class="stratum-tag">The Garrison · Fort Moultrie</p>
+                <h2 class="stratum-headline stratum-headline-dark">Sacred ground<br><em>absorbed by the federal machine.</em></h2>
+                <p class="stratum-body stratum-body-dark">As Fort Moultrie extended its coastal defenses, the government condemned the little chapel. In 1907 the keys were surrendered, and the stone nave became a post chapel for the soldiers of the fort.</p>
+                <a class="chapter-link chapter-link-dark" href="history.html#garrison">Read the chapter · 1907 <span aria-hidden="true">→</span></a>
+            </div>
+            <div class="military-imgs">
+                <figure class="mil-img"><img src="castlex1.webp" alt="The chapel's bell tower" loading="lazy"></figure>
+                <figure class="mil-img mil-img-tall"><img src="castlex6.webp" alt="The chapel from Middle Street" loading="lazy"></figure>
+                <figure class="mil-img"><img src="flag1.webp" alt="The South Carolina flag over the tower" loading="lazy"></figure>
+            </div>
+        </div>
+        <div class="military-pull">
+            <p class="mpull-text">For the next forty years, the rough granite walls absorbed the prayers of soldiers the same way they had absorbed the Episcopal liturgy before them.</p>
+        </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════════════════════════════
+         STRATUM III — 1891: THE CHAPEL (deepest, oldest layer)
+    ═══════════════════════════════════════════════════════════════ -->
+    <section class="stratum stratum-chapel" id="stratum-3">
+        <div class="chapel-bg parallax-bg" data-speed="0.2" style="background-image:url('castlex5.webp')"></div>
+        <div class="chapel-overlay"></div>
+        <div class="stratum-stamp">
+            <span class="stamp-era">III</span>
+            <span class="stamp-year">1891</span>
+        </div>
+        <div class="chapel-content container">
+            <div class="chapel-text">
+                <p class="stratum-tag">Chapel of the Holy Cross · The Winter Hall</p>
+                <h2 class="stratum-headline">The island<br><em>exhaling.</em></h2>
+                <p class="stratum-body">On the 12th of September, 1891, a cornerstone was laid on the western end of Sullivan's Island. What rose was "Medieval Gothic": rubble granite walls laid thick enough to hold a century's worth of whispers.</p>
+                <a class="chapter-link" href="history.html#chapel">Read the chapter · 1891 <span aria-hidden="true">→</span></a>
+            </div>
+        </div>
+        <div class="chapel-grid container">
+            <figure class="cg-feat"><img src="castlen26.webp" alt="Timber trusses over the old nave" loading="lazy"></figure>
+            <figure class="cg-item"><img src="castlen6.webp" alt="The nave of the chapel" loading="lazy"></figure>
+            <figure class="cg-item"><img src="castlen17.webp" alt="Granite and pointed-arch detail" loading="lazy"></figure>
+            <figure class="cg-item"><img src="castlen19.webp" alt="The great fireplace" loading="lazy"></figure>
+            <figure class="cg-item"><img src="castlen21.webp" alt="A Gothic arch" loading="lazy"></figure>
+            <figure class="cg-item"><img src="castlen9.webp" alt="The stone hall" loading="lazy"></figure>
+            <figure class="cg-item"><img src="castlen20.webp" alt="Chapel window light" loading="lazy"></figure>
+        </div>
+        <div class="chapel-pull container">
+            <blockquote class="chapel-quote">"The stone nave was bare, its tall ceiling carried by open timber trusses and hammer beams — light entering only through the deep reveals of pointed-arch windows."</blockquote>
+            <cite class="chapel-cite">— Witold Rybczynski, <em>The Pennsylvania Gazette</em></cite>
+        </div>
+        <div class="chapel-sword">
+            <img src="sword.webp" alt="The sword of Fort Sullivan" class="sword-img" loading="lazy">
+        </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════════════════════════════
+         GALLERY — THE FULL ESTATE (stroll, then open any frame)
+    ═══════════════════════════════════════════════════════════════ -->
+    <section class="stratum stratum-gallery" id="gallery">
+        <div class="gallery-head container">
+            <div>
+                <p class="gallery-tag">The Full Estate</p>
+                <h2 class="gallery-title">A stroll through <em>the castle.</em></h2>
+            </div>
+            <div class="gallery-arrows">
+                <button type="button" class="gallery-prev" aria-label="Scroll photographs left">←</button>
+                <button type="button" class="gallery-next" aria-label="Scroll photographs right">→</button>
+            </div>
+        </div>
+        <div class="gallery-strip" id="gallery-strip">
+{{GALLERY}}
+        </div>
+        <p class="gallery-hint container">{{COUNT}} photographs · Drag, scroll or use the arrows · Select any image to enlarge</p>
+    </section>
+
+    <section class="closing">
+        <h2 class="closing-line">A chapel. A castle.<br><em>A place of its own.</em></h2>
+        <a class="chapter-link" href="history.html">Explore the history <span aria-hidden="true">→</span></a>
+    </section>
+    </main>
+
+{{FOOTER}}
+
+{{LIGHTBOX}}
+</body>
+</html>
